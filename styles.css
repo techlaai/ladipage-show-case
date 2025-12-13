@@ -1769,11 +1769,244 @@ h6 {
         padding: 100px 0 40px;
     }
 
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+
     .section-title {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+    }
+
+    .section-desc {
+        font-size: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .hero-stats {
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 
     .proof-stats-grid {
         grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .proof-stat-card {
+        padding: var(--spacing-lg);
+    }
+
+    .proof-stat-number {
+        font-size: 2rem;
+    }
+
+    .proof-stat-label {
+        font-size: 0.85rem;
+    }
+
+    .proof-stat-desc {
+        font-size: 0.7rem;
+    }
+
+    .proof-stat-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        padding: var(--spacing-lg);
+    }
+
+    .about-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .about-card h3 {
+        font-size: 1.125rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: var(--spacing-lg);
+    }
+
+    .service-card h3 {
+        font-size: 1.125rem;
+    }
+
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-card {
+        padding: var(--spacing-lg);
+    }
+
+    .case-title {
+        font-size: 1rem;
+    }
+
+    .filter-btn {
+        padding: var(--spacing-xs) var(--spacing-md);
+        font-size: 0.8rem;
+    }
+
+    .workflow-step {
+        gap: var(--spacing-md);
+    }
+
+    .step-content h3 {
+        font-size: 1.125rem;
+    }
+
+    .step-content p {
+        font-size: 0.9rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card {
+        padding: var(--spacing-lg);
+    }
+
+    .pricing-price .amount {
+        font-size: 2.5rem;
+    }
+
+    .faq-question {
+        padding: var(--spacing-md);
+        font-size: 0.9rem;
+    }
+
+    .faq-answer p {
+        padding: 0 var(--spacing-md) var(--spacing-md);
+        font-size: 0.9rem;
+    }
+
+    .cta-title {
+        font-size: 1.5rem;
+    }
+
+    .cta-desc {
+        font-size: 1rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-detail {
+        text-align: center;
+    }
+
+    .btn-xl {
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: 1rem;
+    }
+
+    .cta-trust {
+        gap: var(--spacing-md);
+    }
+
+    .cta-trust .trust-item {
+        font-size: 0.75rem;
+    }
+
+    .footer-content {
+        gap: var(--spacing-xl);
+    }
+
+    .footer-brand .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .footer-links h4,
+    .footer-contact h4 {
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .footer-links a,
+    .footer-contact a {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+    }
+
+    .trust-logos {
+        gap: var(--spacing-sm);
+    }
+
+    .trust-item {
+        font-size: 0.75rem;
+    }
+
+    .trust-item i {
+        font-size: 1rem;
+    }
+
+    .highlight-box {
+        padding: var(--spacing-lg);
+    }
+
+    .highlight-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    .highlight-content h3 {
+        font-size: 1.125rem;
+    }
+
+    .highlight-content li {
+        font-size: 0.8rem;
+    }
+
+    .highlight-content ul {
+        grid-template-columns: 1fr;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .proof-bar {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .proof-item {
+        font-size: 0.75rem;
+        padding: 0 var(--spacing-lg);
     }
 }

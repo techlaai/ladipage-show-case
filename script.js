@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-        
+
         if (currentScroll > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-        
+
         lastScroll = currentScroll;
     });
 
@@ -66,10 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateCounter = (counter) => {
         const target = +counter.getAttribute('data-target');
         const increment = target / counterSpeed;
-        
+
         const updateCounter = () => {
             const current = +counter.innerText;
-            
+
             if (current < target) {
                 counter.innerText = Math.ceil(current + increment);
                 setTimeout(updateCounter, 1);
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         };
-        
+
         updateCounter();
     };
 
@@ -106,15 +106,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
-        
+
         question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
-            
+
             // Close all other items
             faqItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
             });
-            
+
             // Toggle current item
             if (!isActive) {
                 item.classList.add('active');
@@ -133,12 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Update active button
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            
+
             const filter = btn.getAttribute('data-filter');
-            
+
             caseCards.forEach(card => {
                 const category = card.getAttribute('data-category');
-                
+
                 if (filter === 'all' || category === filter) {
                     card.style.display = 'block';
                     card.style.animation = 'fadeIn 0.5s ease forwards';
@@ -156,11 +156,11 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            
+
             if (target) {
                 const offset = 80; // Navbar height
                 const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typeWriter = (element, text, speed = 100) => {
         let i = 0;
         element.innerHTML = '';
-        
+
         const type = () => {
             if (i < text.length) {
                 element.innerHTML += text.charAt(i);
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(type, speed);
             }
         };
-        
+
         type();
     };
 
@@ -191,10 +191,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // PARALLAX EFFECT
     // ===================
     const heroCircles = document.querySelectorAll('.hero-circle');
-    
+
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
-        
+
         heroCircles.forEach((circle, index) => {
             const speed = (index + 1) * 0.1;
             circle.style.transform = `translateY(${scrolled * speed}px)`;
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // LAZY LOADING IMAGES (if needed)
     // ===================
     const lazyImages = document.querySelectorAll('img[data-src]');
-    
+
     const imageObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -223,13 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // BUTTON RIPPLE EFFECT
     // ===================
     const buttons = document.querySelectorAll('.btn');
-    
+
     buttons.forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             const rect = this.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-            
+
             const ripple = document.createElement('span');
             ripple.style.cssText = `
                 position: absolute;
@@ -243,11 +243,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 top: ${y}px;
                 animation: rippleEffect 0.6s ease-out;
             `;
-            
+
             this.style.position = 'relative';
             this.style.overflow = 'hidden';
             this.appendChild(ripple);
-            
+
             setTimeout(() => ripple.remove(), 600);
         });
     });
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===================
     // Trap focus in mobile menu when open
     const focusableElements = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-    
+
     const trapFocus = (element) => {
         const focusableContent = element.querySelectorAll(focusableElements);
         const firstFocusable = focusableContent[0];
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             }
-            
+
             if (e.key === 'Escape') {
                 mobileMenu.classList.remove('active');
                 document.body.style.overflow = '';
@@ -357,7 +357,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 'event_label': label
             });
         }
-        console.log(`Event: ${category} - ${action} - ${label}`);
     };
 
     // Track CTA clicks
@@ -380,13 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach(section => sectionObserver.observe(section));
 
-    // ===================
-    // CONSOLE EASTER EGG
-    // ===================
-    console.log('%c🚀 AutoGenius - 127+ Projects Completed!', 
-        'font-size: 24px; font-weight: bold; color: #00aaff;');
-    console.log('%cInterested in automation? Contact us now!', 
-        'font-size: 14px; color: #003355;');
+
 
     // ===================
     // PERFORMANCE OPTIMIZATION
@@ -416,8 +409,6 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     };
 
-    // Log ready state
-    console.log('✅ Landing page initialized successfully!');
 });
 
 // ===================

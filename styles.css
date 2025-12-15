@@ -2040,3 +2040,244 @@ h6 {
         padding: 0 var(--spacing-lg);
     }
 }
+
+/* ==========================================
+   BOOKING SECTION
+========================================== */
+.booking-section {
+    padding: var(--spacing-4xl) 0;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 50%, #f5f9ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.booking-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 170, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.booking-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.booking-content {
+    max-width: 500px;
+}
+
+.booking-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+}
+
+.booking-desc {
+    font-size: 1.1rem;
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.7;
+}
+
+.booking-benefits {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.booking-benefits li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) 0;
+    font-size: 1rem;
+    color: var(--gray-700);
+}
+
+.booking-benefits li i {
+    color: var(--success);
+    font-size: 1.1rem;
+}
+
+.booking-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 15px rgba(0, 170, 255, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 4px 25px rgba(0, 170, 255, 0.6), 0 0 40px rgba(0, 170, 255, 0.2);
+    }
+}
+
+.booking-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-card {
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-xl);
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid rgba(0, 170, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.booking-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent-gradient);
+}
+
+.booking-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--gray-100);
+    margin-bottom: var(--spacing-lg);
+}
+
+.booking-card-header i {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.booking-card-header span {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--gray-800);
+}
+
+.booking-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.booking-info-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+}
+
+.booking-info-item i {
+    color: var(--primary);
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.booking-info-item span {
+    font-size: 0.95rem;
+    color: var(--gray-700);
+    font-weight: 500;
+}
+
+.booking-card-footer {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--gray-100);
+}
+
+.availability-dot {
+    width: 10px;
+    height: 10px;
+    background: var(--success);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.booking-card-footer span {
+    font-size: 0.875rem;
+    color: var(--success);
+    font-weight: 600;
+}
+
+/* Booking Section Responsive */
+@media (max-width: 900px) {
+    .booking-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .booking-content {
+        max-width: 100%;
+    }
+
+    .booking-benefits {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .booking-btn {
+        justify-content: center;
+    }
+
+    .booking-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .booking-title {
+        font-size: 1.5rem;
+    }
+
+    .booking-desc {
+        font-size: 1rem;
+    }
+
+    .booking-benefits li {
+        font-size: 0.9rem;
+    }
+
+    .booking-card {
+        padding: var(--spacing-lg);
+    }
+
+    .booking-card-header span {
+        font-size: 1rem;
+    }
+
+    .booking-info-item {
+        padding: var(--spacing-sm);
+    }
+
+    .booking-info-item span {
+        font-size: 0.85rem;
+    }
+}

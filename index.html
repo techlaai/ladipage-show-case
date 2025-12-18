@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -35,12 +35,14 @@
                 <span class="logo-text">TECHLA<span class="highlight"> AI</span></span>
             </a>
             <ul class="nav-links">
-                <li><a href="#about">Về Chúng Tôi</a></li>
-                <li><a href="#proof">Thành Tích</a></li>
-                <li><a href="#services">Dịch Vụ</a></li>
+                <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+                <li><a href="#proof" data-i18n="nav.achievements">Achievements</a></li>
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
                 <li><a href="#cases">Case Studies</a></li>
-                <li><a href="#pricing">Báo Giá</a></li>
-                <li><a href="#contact" class="btn-nav">Liên Hệ Ngay</a></li>
+                <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="#contact" class="btn-nav" data-i18n="nav.contact">Contact Now</a></li>
+                <li><button class="lang-switcher" id="langSwitcher"><span class="lang-flag">🇺🇸</span><span
+                            class="lang-code">EN</span></button></li>
             </ul>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <span></span>
@@ -62,55 +64,58 @@
         <div class="container hero-content">
             <div class="hero-badge" data-aos="fade-down">
                 <span class="pulse-dot"></span>
-                <span>Đang Nhận Dự Án Mới</span>
+                <span data-i18n="hero.badge">Accepting New Projects</span>
             </div>
 
             <h1 data-aos="fade-up" data-aos-delay="100">
-                <span class="hero-line-1">Biến <span class="gradient-text">Thủ Công</span> Thành</span>
-                <span class="hero-line-2"><span class="gradient-text-2">Tự Động</span> Chất Lượng</span>
+                <span class="hero-line-1"><span data-i18n="hero.title1">Transform</span> <span class="gradient-text"
+                        data-i18n="hero.titleHighlight1">Manual Work</span> <span
+                        data-i18n="hero.titleInto">Into</span></span>
+                <span class="hero-line-2"><span class="gradient-text-2" data-i18n="hero.titleHighlight2">Quality
+                        Automation</span></span>
             </h1>
 
-            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                Xây dựng các trợ lý AI thực sự tạo ra tác động tại doanh nghiệp của bạn,<br>
-                thúc đẩy tăng trưởng doanh thu rõ rệt, giảm nhu cầu về nhân sự<br>
-                và tiết kiệm hàng nghìn giờ làm việc thủ công không cần thiết.
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-i18n="hero.subtitle">
+                Build AI assistants that truly impact your business,<br>
+                driving clear revenue growth, reducing staffing needs<br>
+                and saving thousands of unnecessary manual work hours.
             </p>
 
             <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
                 <div class="stat-item">
                     <div class="stat-number counter" data-target="127">0</div>
-                    <div class="stat-label">Dự Án Hoàn Thành</div>
+                    <div class="stat-label" data-i18n="hero.stats.projects">Projects Completed</div>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
                     <div class="stat-number counter" data-target="98">0</div>
-                    <div class="stat-label">% Khách Hài Lòng</div>
+                    <div class="stat-label" data-i18n="hero.stats.satisfaction">% Client Satisfaction</div>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
                     <div class="stat-number counter" data-target="85">0</div>
-                    <div class="stat-label">Khách Quay Lại</div>
+                    <div class="stat-label" data-i18n="hero.stats.returning">Returning Clients</div>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
                     <div class="stat-number"><i class="fas fa-handshake" style="font-size: 0.8em"></i></div>
-                    <div class="stat-label">Cam Kết Tiến Độ</div>
+                    <div class="stat-label" data-i18n="hero.stats.commitment">Timeline Commitment</div>
                 </div>
             </div>
 
             <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
                 <a href="#contact" class="btn btn-primary btn-lg">
-                    <span>Nhận Tư Vấn Miễn Phí</span>
+                    <span data-i18n="hero.cta.primary">Get Free Consultation</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
                 <a href="#cases" class="btn btn-outline btn-lg">
                     <i class="fas fa-play-circle"></i>
-                    <span>Xem Case Studies</span>
+                    <span data-i18n="hero.cta.secondary">View Case Studies</span>
                 </a>
             </div>
 
             <div class="hero-trust" data-aos="fade-up" data-aos-delay="500">
-                <span class="trust-label">Đã tin tưởng bởi:</span>
+                <span class="trust-label" data-i18n="hero.trust.label">Trusted by:</span>
                 <div class="trust-logos">
                     <div class="trust-item"><i class="fab fa-shopify"></i> E-Commerce</div>
                     <div class="trust-item"><i class="fas fa-hospital"></i> Healthcare</div>
@@ -122,7 +127,7 @@
         </div>
 
         <div class="scroll-indicator">
-            <span>Cuộn xuống</span>
+            <span data-i18n="hero.scroll">Scroll down</span>
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
@@ -166,13 +171,12 @@
         </div>
     </section>
 
-    <!-- About / Why Me Section -->
     <section class="about-section" id="about">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">TẠI SAO CHỌN CHÚNG TÔI?</span>
-                <h2 class="section-title">Không Chỉ Làm Việc,<br><span class="gradient-text">Chúng tôi Giải Quyết Vấn
-                        Đề</span></h2>
+                <span class="section-tag" data-i18n="about.tag">WHY CHOOSE US?</span>
+                <h2 class="section-title"><span data-i18n="about.title">Not Just Working,</span><br><span
+                        class="gradient-text" data-i18n="about.titleHighlight">We Solve Problems</span></h2>
             </div>
 
             <div class="about-grid">
@@ -180,76 +184,85 @@
                     <div class="about-icon">
                         <i class="fas fa-rocket"></i>
                     </div>
-                    <h3>Cam Kết Tiến Độ</h3>
-                    <p>Tiến độ rõ ràng, bàn giao đúng hẹn. Dự án lớn hay nhỏ đều được ưu tiên.</p>
-                    <div class="about-stat">100% đúng deadline</div>
+                    <h3 data-i18n="about.cards.commitment.title">Timeline Commitment</h3>
+                    <p data-i18n="about.cards.commitment.desc">Clear progress, on-time delivery. Big or small projects
+                        get priority.</p>
+                    <div class="about-stat" data-i18n="about.cards.commitment.stat">100% on deadline</div>
                 </div>
 
                 <div class="about-card featured" data-aos="fade-up" data-aos-delay="200">
-                    <div class="featured-badge">Phổ Biến Nhất</div>
+                    <div class="featured-badge" data-i18n="about.cards.projects.badge">Most Popular</div>
                     <div class="about-icon">
                         <i class="fas fa-code"></i>
                     </div>
-                    <h3>127+ Dự Án Thực Tế</h3>
-                    <p>Mỗi dự án là một bài toán thực. Không demo, không lý thuyết suông.</p>
-                    <div class="about-stat">98% khách hài lòng</div>
+                    <h3 data-i18n="about.cards.projects.title">127+ Real Projects</h3>
+                    <p data-i18n="about.cards.projects.desc">Each project is a real challenge. No demos, no empty
+                        theory.</p>
+                    <div class="about-stat" data-i18n="about.cards.projects.stat">98% satisfied clients</div>
                 </div>
 
                 <div class="about-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="about-icon">
                         <i class="fas fa-headset"></i>
                     </div>
-                    <h3>Hỗ Trợ Tận Tâm</h3>
-                    <p>Bảo hành sau bàn giao, hướng dẫn chi tiết, sẵn sàng hỗ trợ 24/7.</p>
-                    <div class="about-stat">85% khách quay lại</div>
+                    <h3 data-i18n="about.cards.support.title">Dedicated Support</h3>
+                    <p data-i18n="about.cards.support.desc">Post-delivery warranty, detailed guidance, 24/7 support
+                        ready.</p>
+                    <div class="about-stat" data-i18n="about.cards.support.stat">85% returning clients</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Proof Section - Statistics -->
     <section class="proof-section" id="proof">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">THÀNH TÍCH THỰC TẾ</span>
-                <h2 class="section-title">Con Số <span class="gradient-text">Không Biết Nói Dối</span></h2>
-                <p class="section-desc">Dữ liệu từ 127 dự án thật - Được phân loại và kiểm chứng</p>
+                <span class="section-tag" data-i18n="proof.tag">REAL ACHIEVEMENTS</span>
+                <h2 class="section-title"><span data-i18n="proof.title">Numbers</span> <span class="gradient-text"
+                        data-i18n="proof.titleHighlight">Don't Lie</span></h2>
+                <p class="section-desc" data-i18n="proof.desc">Data from 127 real projects - Classified and verified</p>
             </div>
 
             <div class="proof-stats-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="proof-stat-card automation">
                     <div class="proof-stat-icon"><i class="fas fa-cogs"></i></div>
                     <div class="proof-stat-number counter" data-target="42">0</div>
-                    <div class="proof-stat-label">Automation Projects</div>
-                    <div class="proof-stat-desc">Workflow n8n, crawl data, auto posting, extension Chrome</div>
+                    <div class="proof-stat-label" data-i18n="proof.categories.automation.label">Automation Projects
+                    </div>
+                    <div class="proof-stat-desc" data-i18n="proof.categories.automation.desc">n8n workflows, data
+                        crawling, auto posting, Chrome extensions</div>
                 </div>
 
                 <div class="proof-stat-card chatbot">
                     <div class="proof-stat-icon"><i class="fas fa-robot"></i></div>
                     <div class="proof-stat-number counter" data-target="28">0</div>
-                    <div class="proof-stat-label">Chatbot AI</div>
-                    <div class="proof-stat-desc">Zalo, Messenger, Website, tích hợp OpenAI & Gemini</div>
+                    <div class="proof-stat-label" data-i18n="proof.categories.chatbot.label">Chatbot AI</div>
+                    <div class="proof-stat-desc" data-i18n="proof.categories.chatbot.desc">Zalo, Messenger, Website,
+                        OpenAI & Gemini integration</div>
                 </div>
 
                 <div class="proof-stat-card video">
                     <div class="proof-stat-icon"><i class="fas fa-video"></i></div>
                     <div class="proof-stat-number counter" data-target="24">0</div>
-                    <div class="proof-stat-label">Video AI & Content</div>
-                    <div class="proof-stat-desc">Tự động tạo video, gen content, đăng multi-platform</div>
+                    <div class="proof-stat-label" data-i18n="proof.categories.video.label">Video AI & Content</div>
+                    <div class="proof-stat-desc" data-i18n="proof.categories.video.desc">Auto video creation, content
+                        gen, multi-platform posting</div>
                 </div>
 
                 <div class="proof-stat-card system">
                     <div class="proof-stat-icon"><i class="fas fa-server"></i></div>
                     <div class="proof-stat-number counter" data-target="18">0</div>
-                    <div class="proof-stat-label">System Setup</div>
-                    <div class="proof-stat-desc">Dashboard, CRM, Website, Database integration</div>
+                    <div class="proof-stat-label" data-i18n="proof.categories.system.label">System Setup</div>
+                    <div class="proof-stat-desc" data-i18n="proof.categories.system.desc">Dashboard, CRM, Website,
+                        Database integration</div>
                 </div>
 
                 <div class="proof-stat-card other">
                     <div class="proof-stat-icon"><i class="fas fa-puzzle-piece"></i></div>
                     <div class="proof-stat-number counter" data-target="15">0</div>
-                    <div class="proof-stat-label">Các Dự Án Khác</div>
-                    <div class="proof-stat-desc">Đa dạng ngành nghề, giải pháp custom theo yêu cầu</div>
+                    <div class="proof-stat-label" data-i18n="proof.categories.other.label">Other Projects</div>
+                    <div class="proof-stat-desc" data-i18n="proof.categories.other.desc">Diverse industries, custom
+                        solutions by request</div>
                 </div>
             </div>
 
@@ -257,15 +270,16 @@
                 <div class="highlight-box">
                     <div class="highlight-icon"><i class="fas fa-fire"></i></div>
                     <div class="highlight-content">
-                        <h3>Điểm Nổi Bật</h3>
+                        <h3 data-i18n="proof.highlight.title">Highlights</h3>
                         <ul>
-                            <li><i class="fas fa-check"></i> Đa nền tảng: Zalo, Facebook, Instagram, TikTok, Shopee,
-                                YouTube</li>
-                            <li><i class="fas fa-check"></i> Tích hợp AI: OpenAI, Gemini, ElevenLabs, Leonardo AI, Veo 3
-                            </li>
-                            <li><i class="fas fa-check"></i> Database: Supabase, PostgreSQL, Google Sheets, Redis</li>
-                            <li><i class="fas fa-check"></i> Công nghệ: n8n, Puppeteer, Chrome Extension, API custom
-                            </li>
+                            <li><i class="fas fa-check"></i> <span>Multi-platform: Zalo, Facebook, Instagram, TikTok,
+                                    Shopee, YouTube</span></li>
+                            <li><i class="fas fa-check"></i> <span>AI Integration: OpenAI, Gemini, ElevenLabs, Leonardo
+                                    AI, Veo 3</span></li>
+                            <li><i class="fas fa-check"></i> <span>Database: Supabase, PostgreSQL, Google Sheets,
+                                    Redis</span></li>
+                            <li><i class="fas fa-check"></i> <span>Technology: n8n, Puppeteer, Chrome Extension, Custom
+                                    API</span></li>
                         </ul>
                     </div>
                 </div>
@@ -277,9 +291,10 @@
     <section class="services-section" id="services">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">DỊCH VỤ</span>
-                <h2 class="section-title">Giải Pháp <span class="gradient-text">Toàn Diện</span></h2>
-                <p class="section-desc">Từ ý tưởng đến triển khai - Tất cả trong một</p>
+                <span class="section-tag" data-i18n="services.tag">SERVICES</span>
+                <h2 class="section-title"><span data-i18n="services.title">Comprehensive</span> <span
+                        class="gradient-text" data-i18n="services.titleHighlight">Solutions</span></h2>
+                <p class="section-desc" data-i18n="services.desc">From idea to deployment - All in one</p>
             </div>
 
             <div class="services-grid">
@@ -287,93 +302,103 @@
                     <div class="service-icon-wrap">
                         <div class="service-icon"><i class="fas fa-robot"></i></div>
                     </div>
-                    <h3>Chatbot AI</h3>
-                    <p>Chatbot thông minh cho Zalo, Messenger, Website. Tích hợp OpenAI, Gemini. Tư vấn tự động 24/7.
-                    </p>
+                    <h3 data-i18n="services.cards.chatbot.title">Chatbot AI</h3>
+                    <p data-i18n="services.cards.chatbot.desc">Smart chatbot for Zalo, Messenger, Website. OpenAI,
+                        Gemini integration. 24/7 automatic consulting.</p>
                     <ul class="service-features">
-                        <li>Zalo OA & Zalo cá nhân</li>
-                        <li>Facebook Messenger</li>
-                        <li>Tích hợp KiotViet, MISA</li>
-                        <li>Memory & Context dài hạn</li>
+                        <li data-i18n="services.cards.chatbot.features.0">Zalo OA & Personal Zalo</li>
+                        <li data-i18n="services.cards.chatbot.features.1">Facebook Messenger</li>
+                        <li data-i18n="services.cards.chatbot.features.2">KiotViet, MISA integration</li>
+                        <li data-i18n="services.cards.chatbot.features.3">Long-term Memory & Context</li>
                     </ul>
-                    <div class="service-price">Từ <span>2.000.000đ</span></div>
+                    <div class="service-price"><span data-i18n="services.cards.chatbot.price">From</span> <span
+                            data-i18n="services.cards.chatbot.amount">$80</span></div>
                 </div>
 
                 <div class="service-card popular" data-aos="fade-up" data-aos-delay="200">
-                    <div class="popular-badge">HOT</div>
+                    <div class="popular-badge" data-i18n="services.cards.automation.badge">HOT</div>
                     <div class="service-icon-wrap">
                         <div class="service-icon"><i class="fas fa-bolt"></i></div>
                     </div>
-                    <h3>Automation Workflow</h3>
-                    <p>Tự động hóa mọi quy trình bằng n8n. Crawl data, auto posting, xử lý đơn hàng, báo cáo tự động.
-                    </p>
+                    <h3 data-i18n="services.cards.automation.title">Automation Workflow</h3>
+                    <p data-i18n="services.cards.automation.desc">Automate any process with n8n. Data crawling, auto
+                        posting, order processing, auto reports.</p>
                     <ul class="service-features">
-                        <li>Workflow n8n custom</li>
-                        <li>Crawl data từ mọi nguồn</li>
-                        <li>Auto post đa nền tảng</li>
-                        <li>Tích hợp Shopee, TikTok Shop</li>
+                        <li data-i18n="services.cards.automation.features.0">Custom n8n workflow</li>
+                        <li data-i18n="services.cards.automation.features.1">Crawl data from any source</li>
+                        <li data-i18n="services.cards.automation.features.2">Multi-platform auto post</li>
+                        <li data-i18n="services.cards.automation.features.3">Shopee, TikTok Shop integration</li>
                     </ul>
-                    <div class="service-price">Từ <span>1.500.000đ</span></div>
+                    <div class="service-price"><span data-i18n="services.cards.automation.price">From</span> <span
+                            data-i18n="services.cards.automation.amount">$60</span></div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-icon-wrap">
                         <div class="service-icon"><i class="fas fa-video"></i></div>
                     </div>
-                    <h3>Video AI & Content</h3>
-                    <p>Tự động tạo video từ script, gen content đa nền tảng, đăng lên YouTube, TikTok, Facebook.</p>
+                    <h3 data-i18n="services.cards.video.title">Video AI & Content</h3>
+                    <p data-i18n="services.cards.video.desc">Auto create videos from scripts, multi-platform content
+                        gen, post to YouTube, TikTok, Facebook.</p>
                     <ul class="service-features">
-                        <li>Gen video từ chủ đề</li>
-                        <li>Auto voice với ElevenLabs</li>
-                        <li>Đăng tự động YouTube, TikTok</li>
-                        <li>Rewrite content với AI</li>
+                        <li data-i18n="services.cards.video.features.0">Generate video from topic</li>
+                        <li data-i18n="services.cards.video.features.1">ElevenLabs auto voice</li>
+                        <li data-i18n="services.cards.video.features.2">Auto post YouTube, TikTok</li>
+                        <li data-i18n="services.cards.video.features.3">AI content rewrite</li>
                     </ul>
-                    <div class="service-price">Từ <span>3.000.000đ</span></div>
+                    <div class="service-price"><span data-i18n="services.cards.video.price">From</span> <span
+                            data-i18n="services.cards.video.amount">$120</span></div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-icon-wrap">
                         <div class="service-icon"><i class="fas fa-chrome"></i></div>
                     </div>
-                    <h3>Chrome Extension</h3>
-                    <p>Extension tự động thao tác trình duyệt, autofill form, crawl data, tự động hóa workflow.</p>
+                    <h3 data-i18n="services.cards.extension.title">Chrome Extension</h3>
+                    <p data-i18n="services.cards.extension.desc">Auto browser operation extension, autofill forms, crawl
+                        data, workflow automation.</p>
                     <ul class="service-features">
-                        <li>Autofill form phức tạp</li>
-                        <li>Crawl data web</li>
-                        <li>Tự động thao tác browser</li>
-                        <li>Xử lý captcha</li>
+                        <li data-i18n="services.cards.extension.features.0">Complex form autofill</li>
+                        <li data-i18n="services.cards.extension.features.1">Web data crawling</li>
+                        <li data-i18n="services.cards.extension.features.2">Auto browser actions</li>
+                        <li data-i18n="services.cards.extension.features.3">Captcha handling</li>
                     </ul>
-                    <div class="service-price">Từ <span>2.500.000đ</span></div>
+                    <div class="service-price"><span data-i18n="services.cards.extension.price">From</span> <span
+                            data-i18n="services.cards.extension.amount">$100</span></div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="service-icon-wrap">
                         <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
                     </div>
-                    <h3>Dashboard & CRM</h3>
-                    <p>Hệ thống quản lý tùy chỉnh, dashboard báo cáo, tích hợp dữ liệu từ nhiều nguồn.</p>
+                    <h3 data-i18n="services.cards.dashboard.title">Dashboard & CRM</h3>
+                    <p data-i18n="services.cards.dashboard.desc">Custom management system, reporting dashboard,
+                        multi-source data integration.</p>
                     <ul class="service-features">
-                        <li>Dashboard trực quan</li>
-                        <li>Báo cáo tự động</li>
-                        <li>Tích hợp Supabase, PostgreSQL</li>
-                        <li>Export Excel, PDF</li>
+                        <li data-i18n="services.cards.dashboard.features.0">Visual dashboard</li>
+                        <li data-i18n="services.cards.dashboard.features.1">Auto reporting</li>
+                        <li data-i18n="services.cards.dashboard.features.2">Supabase, PostgreSQL integration</li>
+                        <li data-i18n="services.cards.dashboard.features.3">Export Excel, PDF</li>
                     </ul>
-                    <div class="service-price">Từ <span>4.000.000đ</span></div>
+                    <div class="service-price"><span data-i18n="services.cards.dashboard.price">From</span> <span
+                            data-i18n="services.cards.dashboard.amount">$160</span></div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="600">
                     <div class="service-icon-wrap">
                         <div class="service-icon"><i class="fas fa-plug"></i></div>
                     </div>
-                    <h3>API Integration</h3>
-                    <p>Kết nối mọi hệ thống: Shopee, TikTok Shop, MISA, KiotViet, Sapo, Nhanh.vn và nhiều hơn.</p>
+                    <h3 data-i18n="services.cards.api.title">API Integration</h3>
+                    <p data-i18n="services.cards.api.desc">Connect all systems: Shopee, TikTok Shop, MISA, KiotViet,
+                        Sapo, Nhanh.vn and more.</p>
                     <ul class="service-features">
-                        <li>Tích hợp sàn TMĐT</li>
-                        <li>Kết nối phần mềm kế toán</li>
-                        <li>Webhook & API custom</li>
-                        <li>Đồng bộ dữ liệu realtime</li>
+                        <li data-i18n="services.cards.api.features.0">E-commerce platform integration</li>
+                        <li data-i18n="services.cards.api.features.1">Accounting software connection</li>
+                        <li data-i18n="services.cards.api.features.2">Custom Webhook & API</li>
+                        <li data-i18n="services.cards.api.features.3">Realtime data sync</li>
                     </ul>
-                    <div class="service-price">Từ <span>1.800.000đ</span></div>
+                    <div class="service-price"><span data-i18n="services.cards.api.price">From</span> <span
+                            data-i18n="services.cards.api.amount">$72</span></div>
                 </div>
             </div>
         </div>
@@ -384,12 +409,14 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">CASE STUDIES</span>
-                <h2 class="section-title">Dự Án <span class="gradient-text">Tiêu Biểu</span></h2>
-                <p class="section-desc">Những dự án phức tạp nhất, kết quả ấn tượng nhất</p>
+                <h2 class="section-title" data-i18n="cases.title">Featured <span class="gradient-text"
+                        data-i18n="cases.titleHighlight">Projects</span></h2>
+                <p class="section-desc" data-i18n="cases.desc">The most complex projects, the most impressive results
+                </p>
             </div>
 
             <div class="cases-filter" data-aos="fade-up">
-                <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                <button class="filter-btn active" data-filter="all" data-i18n="cases.filters.all">All</button>
                 <button class="filter-btn" data-filter="automation">Automation</button>
                 <button class="filter-btn" data-filter="chatbot">Chatbot</button>
                 <button class="filter-btn" data-filter="video">Video AI</button>
@@ -401,11 +428,13 @@
                 <div class="case-card" data-category="chatbot" data-aos="fade-up">
                     <div class="case-header">
                         <span class="case-tag">Chatbot</span>
-                        <span class="case-status completed">✓ Đã hoàn thành</span>
+                        <span class="case-status completed" data-i18n="cases.status.completed">✓ Completed</span>
                     </div>
-                    <h3 class="case-title">Chatbot CSKH sản phẩm thảm - Tích hợp MISA</h3>
-                    <p class="case-desc">Xây dựng chatbot tư vấn & CSKH qua Zalo và Fanpage. Tích hợp MISA để kiểm tra
-                        tồn kho, phân loại khách hàng sỉ/lẻ, gửi ảnh sản phẩm.</p>
+                    <h3 class="case-title" data-i18n="cases.cards.case1.title">Carpet Product Customer Care Chatbot -
+                        MISA Integration</h3>
+                    <p class="case-desc" data-i18n="cases.cards.case1.desc">Built consulting & customer care chatbot via
+                        Zalo and Fanpage. MISA integration for inventory check, wholesale/retail customer
+                        classification, product image sending.</p>
                     <div class="case-tech">
                         <span>n8n</span>
                         <span>OpenAI</span>
@@ -416,11 +445,11 @@
                     <div class="case-results">
                         <div class="result-item">
                             <i class="fas fa-comments"></i>
-                            <span>Tự động 24/7</span>
+                            <span data-i18n="cases.results.auto247">Auto 24/7</span>
                         </div>
                         <div class="result-item">
                             <i class="fas fa-database"></i>
-                            <span>Lưu lịch sử</span>
+                            <span data-i18n="cases.results.saveHistory">Save history</span>
                         </div>
                     </div>
                 </div>
@@ -429,11 +458,12 @@
                 <div class="case-card" data-category="automation" data-aos="fade-up" data-aos-delay="100">
                     <div class="case-header">
                         <span class="case-tag">Automation</span>
-                        <span class="case-status completed">✓ Đã hoàn thành</span>
+                        <span class="case-status completed" data-i18n="cases.status.completed">✓ Completed</span>
                     </div>
-                    <h3 class="case-title">Hệ thống tự động hóa Shopee & TikTok Shop</h3>
-                    <p class="case-desc">Tự động crawl đơn hàng, income, wallet. Đối soát đơn hàng tự động, gửi báo cáo
-                        hàng ngày/tuần/tháng qua Zalo.</p>
+                    <h3 class="case-title" data-i18n="cases.cards.case2.title">Shopee & TikTok Shop Automation System
+                    </h3>
+                    <p class="case-desc" data-i18n="cases.cards.case2.desc">Auto crawl orders, income, wallet. Auto
+                        order reconciliation, daily/weekly/monthly reports via Zalo.</p>
                     <div class="case-tech">
                         <span>Python</span>
                         <span>n8n</span>
@@ -444,11 +474,11 @@
                     <div class="case-results">
                         <div class="result-item">
                             <i class="fas fa-sync"></i>
-                            <span>Auto sync</span>
+                            <span data-i18n="cases.results.autoSync">Auto sync</span>
                         </div>
                         <div class="result-item">
                             <i class="fas fa-file-excel"></i>
-                            <span>Báo cáo tự động</span>
+                            <span data-i18n="cases.results.autoReport">Auto report</span>
                         </div>
                     </div>
                 </div>
@@ -457,11 +487,12 @@
                 <div class="case-card" data-category="automation" data-aos="fade-up" data-aos-delay="200">
                     <div class="case-header">
                         <span class="case-tag">Automation</span>
-                        <span class="case-status completed">✓ Đã hoàn thành</span>
+                        <span class="case-status completed" data-i18n="cases.status.completed">✓ Completed</span>
                     </div>
-                    <h3 class="case-title">CRAWL DỮ LIỆU TRADEINT.COM</h3>
-                    <p class="case-desc">Crawl ~16,000 mã HS, 5 năm dữ liệu XNK. Xử lý OTP, duy trì session, lưu vào
-                        database. Xuất Google Sheets theo nhu cầu.</p>
+                    <h3 class="case-title" data-i18n="cases.cards.case3.title">TRADEINT.COM DATA CRAWL</h3>
+                    <p class="case-desc" data-i18n="cases.cards.case3.desc">Crawl ~16,000 HS codes, 5 years of
+                        import/export data. OTP handling, session maintenance, database storage. Export to Google Sheets
+                        on demand.</p>
                     <div class="case-tech">
                         <span>Web Automation</span>
                         <span>PostgreSQL</span>
@@ -471,11 +502,11 @@
                     <div class="case-results">
                         <div class="result-item">
                             <i class="fas fa-database"></i>
-                            <span>16,000+ mã HS</span>
+                            <span data-i18n="cases.results.hsCodes">16,000+ HS codes</span>
                         </div>
                         <div class="result-item">
                             <i class="fas fa-calendar"></i>
-                            <span>5 năm data</span>
+                            <span data-i18n="cases.results.years">5 years data</span>
                         </div>
                     </div>
                 </div>
@@ -484,11 +515,12 @@
                 <div class="case-card" data-category="video" data-aos="fade-up" data-aos-delay="300">
                     <div class="case-header">
                         <span class="case-tag">Video AI</span>
-                        <span class="case-status completed">✓ Đã hoàn thành</span>
+                        <span class="case-status completed" data-i18n="cases.status.completed">✓ Completed</span>
                     </div>
-                    <h3 class="case-title">Tạo video truyện với ChatGPT + Veo 3</h3>
-                    <p class="case-desc">Từ chủ đề → ChatGPT viết truyện → Tạo prompt cho Veo 3 → Sinh video AI → Ghép
-                        thành sản phẩm hoàn chỉnh tự động.</p>
+                    <h3 class="case-title" data-i18n="cases.cards.case4.title">Story Video Creation with ChatGPT + Veo 3
+                    </h3>
+                    <p class="case-desc" data-i18n="cases.cards.case4.desc">From topic → ChatGPT writes story → Create
+                        Veo 3 prompts → Generate AI video → Auto combine into finished product.</p>
                     <div class="case-tech">
                         <span>OpenAI API</span>
                         <span>Veo 3</span>
@@ -498,11 +530,11 @@
                     <div class="case-results">
                         <div class="result-item">
                             <i class="fas fa-magic"></i>
-                            <span>Full auto</span>
+                            <span data-i18n="cases.results.fullAuto">Full auto</span>
                         </div>
                         <div class="result-item">
                             <i class="fas fa-film"></i>
-                            <span>Video AI</span>
+                            <span data-i18n="cases.results.videoAi">Video AI</span>
                         </div>
                     </div>
                 </div>
@@ -511,11 +543,12 @@
                 <div class="case-card" data-category="automation" data-aos="fade-up" data-aos-delay="400">
                     <div class="case-header">
                         <span class="case-tag">Automation</span>
-                        <span class="case-status completed">✓ Đã hoàn thành</span>
+                        <span class="case-status completed" data-i18n="cases.status.completed">✓ Completed</span>
                     </div>
-                    <h3 class="case-title">Crawl sản phẩm Amazon - Dashboard theo dõi</h3>
-                    <p class="case-desc">Crawl frontend Amazon theo ASIN. Theo dõi giá, deal, rating, inventory hàng
-                        ngày. Dashboard hiển thị biến động.</p>
+                    <h3 class="case-title" data-i18n="cases.cards.case5.title">Amazon Product Crawl - Tracking Dashboard
+                    </h3>
+                    <p class="case-desc" data-i18n="cases.cards.case5.desc">Amazon frontend crawl by ASIN. Daily price,
+                        deal, rating, inventory tracking. Dashboard showing fluctuations.</p>
                     <div class="case-tech">
                         <span>Web Scraping</span>
                         <span>Database</span>
@@ -525,11 +558,11 @@
                     <div class="case-results">
                         <div class="result-item">
                             <i class="fas fa-chart-line"></i>
-                            <span>Real-time tracking</span>
+                            <span data-i18n="cases.results.realtime">Real-time tracking</span>
                         </div>
                         <div class="result-item">
                             <i class="fas fa-bell"></i>
-                            <span>Auto alert</span>
+                            <span data-i18n="cases.results.autoAlert">Auto alert</span>
                         </div>
                     </div>
                 </div>
@@ -538,11 +571,11 @@
                 <div class="case-card" data-category="system" data-aos="fade-up" data-aos-delay="500">
                     <div class="case-header">
                         <span class="case-tag">System</span>
-                        <span class="case-status completed">✓ Đã hoàn thành</span>
+                        <span class="case-status completed" data-i18n="cases.status.completed">✓ Completed</span>
                     </div>
-                    <h3 class="case-title">Website xuất TEM nhãn nhập khẩu</h3>
-                    <p class="case-desc">Hệ thống xuất tem theo Nghị định 43. Nhập thông tin → Kiểm tra → Dịch tiếng
-                        Việt → Xuất PDF tem gốc & tem phụ.</p>
+                    <h3 class="case-title" data-i18n="cases.cards.case6.title">Import Label Export Website</h3>
+                    <p class="case-desc" data-i18n="cases.cards.case6.desc">Label export system per Decree 43. Enter
+                        info → Verify → Vietnamese translation → Export original & supplementary PDF labels.</p>
                     <div class="case-tech">
                         <span>Web App</span>
                         <span>OpenAI</span>
@@ -552,11 +585,11 @@
                     <div class="case-results">
                         <div class="result-item">
                             <i class="fas fa-language"></i>
-                            <span>Auto translate</span>
+                            <span data-i18n="cases.results.autoTranslate">Auto translate</span>
                         </div>
                         <div class="result-item">
                             <i class="fas fa-file-pdf"></i>
-                            <span>Export PDF</span>
+                            <span data-i18n="cases.results.exportPdf">Export PDF</span>
                         </div>
                     </div>
                 </div>
@@ -565,11 +598,11 @@
                 <div class="case-card" data-category="chatbot" data-aos="fade-up">
                     <div class="case-header">
                         <span class="case-tag">Chatbot</span>
-                        <span class="case-status completed">✓ Đã hoàn thành</span>
+                        <span class="case-status completed" data-i18n="cases.status.completed">✓ Completed</span>
                     </div>
-                    <h3 class="case-title">Xử lý đơn hàng từ tin nhắn Zalo</h3>
-                    <p class="case-desc">Nhận tin nhắn Zalo → Gemini phân tích text/ảnh/PDF → Parse đơn hàng JSON →
-                        Insert database → Nhắc lịch đặt hàng tự động.</p>
+                    <h3 class="case-title" data-i18n="cases.cards.case7.title">Zalo Message Order Processing</h3>
+                    <p class="case-desc" data-i18n="cases.cards.case7.desc">Receive Zalo message → Gemini analyze
+                        text/image/PDF → Parse JSON order → Database insert → Auto order reminder.</p>
                     <div class="case-tech">
                         <span>Gemini AI</span>
                         <span>Zalo API</span>
@@ -579,11 +612,11 @@
                     <div class="case-results">
                         <div class="result-item">
                             <i class="fas fa-image"></i>
-                            <span>Đọc ảnh/PDF</span>
+                            <span data-i18n="cases.results.readImage">Read image/PDF</span>
                         </div>
                         <div class="result-item">
                             <i class="fas fa-clock"></i>
-                            <span>Auto reminder</span>
+                            <span data-i18n="cases.results.autoReminder">Auto reminder</span>
                         </div>
                     </div>
                 </div>
@@ -592,11 +625,12 @@
                 <div class="case-card" data-category="system" data-aos="fade-up" data-aos-delay="100">
                     <div class="case-header">
                         <span class="case-tag">System</span>
-                        <span class="case-status in-progress">⚡ Đang thực hiện</span>
+                        <span class="case-status in-progress" data-i18n="cases.status.inProgress">⚡ In Progress</span>
                     </div>
-                    <h3 class="case-title">Spa CRM App - Quản lý toàn diện</h3>
-                    <p class="case-desc">Dashboard 8 chỉ số KPI. Quản lý lịch hẹn, buổi điều trị. Phân quyền người dùng.
-                        Gửi nhắc lịch qua Zalo OA.</p>
+                    <h3 class="case-title" data-i18n="cases.cards.case8.title">Spa CRM App - Comprehensive Management
+                    </h3>
+                    <p class="case-desc" data-i18n="cases.cards.case8.desc">Dashboard with 8 KPI metrics. Appointment &
+                        treatment session management. User permissions. Zalo OA appointment reminders.</p>
                     <div class="case-tech">
                         <span>Web App</span>
                         <span>Supabase</span>
@@ -606,66 +640,74 @@
                     <div class="case-results">
                         <div class="result-item">
                             <i class="fas fa-tachometer-alt"></i>
-                            <span>8 KPIs</span>
+                            <span data-i18n="cases.results.kpis">8 KPIs</span>
                         </div>
                         <div class="result-item">
                             <i class="fas fa-users"></i>
-                            <span>Multi-role</span>
+                            <span data-i18n="cases.results.multiRole">Multi-role</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="cases-more" data-aos="fade-up">
-                <p>Và còn <strong>119+</strong> dự án khác đã hoàn thành...</p>
-                <a href="#contact" class="btn btn-primary">Xem thêm dự án của bạn</a>
+                <p><span data-i18n="cases.more.text">And</span> <strong data-i18n="cases.more.count">119+</strong> <span
+                        data-i18n="cases.more.suffix">other completed projects...</span></p>
+                <a href="#contact" class="btn btn-primary" data-i18n="cases.more.btn">See more of your projects</a>
             </div>
         </div>
     </section>
 
-    <!-- Workflow Section -->
     <section class="workflow-section" id="workflow">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">QUY TRÌNH</span>
-                <h2 class="section-title">Từ Ý Tưởng Đến <span class="gradient-text">Bàn Giao</span></h2>
-                <p class="section-desc">Quy trình 4 bước đơn giản, minh bạch, hiệu quả</p>
+                <span class="section-tag" data-i18n="workflow.tag">PROCESS</span>
+                <h2 class="section-title"><span data-i18n="workflow.title">From Idea To</span> <span
+                        class="gradient-text" data-i18n="workflow.titleHighlight">Delivery</span></h2>
+                <p class="section-desc" data-i18n="workflow.desc">Simple, transparent, effective 4-step process</p>
             </div>
 
             <div class="workflow-timeline">
                 <div class="workflow-step" data-aos="fade-right">
                     <div class="step-number">01</div>
                     <div class="step-content">
-                        <h3>Tư Vấn & Phân Tích</h3>
-                        <p>Lắng nghe yêu cầu, phân tích bài toán, đề xuất giải pháp tối ưu nhất.</p>
-                        <span class="step-time"><i class="fas fa-clock"></i> 1-2 giờ</span>
+                        <h3 data-i18n="workflow.steps.step1.title">Consultation & Analysis</h3>
+                        <p data-i18n="workflow.steps.step1.desc">Listen to requirements, analyze the problem, propose
+                            optimal solutions.</p>
+                        <span class="step-time"><i class="fas fa-clock"></i> <span
+                                data-i18n="workflow.steps.step1.time">1-2 hours</span></span>
                     </div>
                 </div>
 
                 <div class="workflow-step" data-aos="fade-left" data-aos-delay="200">
                     <div class="step-number">02</div>
                     <div class="step-content">
-                        <h3>Báo Giá & Xác Nhận</h3>
-                        <p>Báo giá chi tiết, timeline cụ thể. Thanh toán 50% để bắt đầu.</p>
-                        <span class="step-time"><i class="fas fa-clock"></i> 1-4 giờ</span>
+                        <h3 data-i18n="workflow.steps.step2.title">Quote & Confirmation</h3>
+                        <p data-i18n="workflow.steps.step2.desc">Detailed quote, specific timeline. 50% payment to
+                            start.</p>
+                        <span class="step-time"><i class="fas fa-clock"></i> <span
+                                data-i18n="workflow.steps.step2.time">1-4 hours</span></span>
                     </div>
                 </div>
 
                 <div class="workflow-step" data-aos="fade-right" data-aos-delay="400">
                     <div class="step-number">03</div>
                     <div class="step-content">
-                        <h3>Triển Khai & Demo</h3>
-                        <p>Phát triển theo yêu cầu, demo liên tục, điều chỉnh theo feedback.</p>
-                        <span class="step-time"><i class="fas fa-clock"></i> 24-72 giờ</span>
+                        <h3 data-i18n="workflow.steps.step3.title">Development & Demo</h3>
+                        <p data-i18n="workflow.steps.step3.desc">Develop as required, continuous demo, adjust based on
+                            feedback.</p>
+                        <span class="step-time"><i class="fas fa-clock"></i> <span
+                                data-i18n="workflow.steps.step3.time">24-72 hours</span></span>
                     </div>
                 </div>
 
                 <div class="workflow-step" data-aos="fade-left" data-aos-delay="600">
                     <div class="step-number">04</div>
                     <div class="step-content">
-                        <h3>Bàn Giao & Bảo Hành</h3>
-                        <p>Bàn giao đầy đủ, hướng dẫn sử dụng, bảo hành 14 ngày.</p>
-                        <span class="step-time"><i class="fas fa-check-circle"></i> Hoàn thành</span>
+                        <h3 data-i18n="workflow.steps.step4.title">Delivery & Warranty</h3>
+                        <p data-i18n="workflow.steps.step4.desc">Full delivery, usage guide, 14-day warranty.</p>
+                        <span class="step-time"><i class="fas fa-check-circle"></i> <span
+                                data-i18n="workflow.steps.step4.time">Complete</span></span>
                     </div>
                 </div>
             </div>
@@ -676,78 +718,99 @@
     <section class="pricing-section" id="pricing">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">BẢNG GIÁ</span>
-                <h2 class="section-title">Minh Bạch, <span class="gradient-text">Không Phát Sinh</span></h2>
-                <p class="section-desc">Giá cố định theo complexity - Không phí ẩn</p>
+                <span class="section-tag" data-i18n="pricing.tag">PRICING</span>
+                <h2 class="section-title"><span data-i18n="pricing.title">Transparent,</span> <span
+                        class="gradient-text" data-i18n="pricing.titleHighlight">No Hidden Fees</span></h2>
+                <p class="section-desc" data-i18n="pricing.desc">Fixed price by complexity - No hidden costs</p>
             </div>
 
             <div class="pricing-grid">
                 <div class="pricing-card" data-aos="fade-up">
                     <div class="pricing-header">
-                        <h3>Basic</h3>
-                        <p>Dự án đơn giản</p>
+                        <h3 data-i18n="pricing.plans.basic.name">Basic</h3>
+                        <p data-i18n="pricing.plans.basic.desc">Simple projects</p>
                     </div>
                     <div class="pricing-price">
-                        <span class="currency">₫</span>
-                        <span class="amount">1M</span>
-                        <span class="period">- 4M</span>
+                        <span class="currency" data-i18n="pricing.currency">$</span>
+                        <span class="amount" data-i18n="pricing.plans.basic.amount">40</span>
+                        <span class="period" data-i18n="pricing.plans.basic.range">- $160</span>
                     </div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Workflow đơn giản</li>
-                        <li><i class="fas fa-check"></i> 1-3 node chính</li>
-                        <li><i class="fas fa-check"></i> Hướng dẫn sử dụng chi tiết</li>
-                        <li><i class="fas fa-check"></i> Bảo hành 7 ngày</li>
-                        <li><i class="fas fa-check"></i> Hỗ trợ qua Zalo</li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.basic.features.0">Simple
+                                workflow</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.basic.features.1">1-3 main
+                                nodes</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.basic.features.2">Detailed usage
+                                guide</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.basic.features.3">7-day
+                                warranty</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.basic.features.4">Zalo
+                                support</span></li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline btn-block">Tư Vấn Ngay</a>
+                    <a href="#contact" class="btn btn-outline btn-block" data-i18n="pricing.plans.basic.cta">Consult
+                        Now</a>
                 </div>
 
                 <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pricing-badge">PHỔ BIẾN</div>
+                    <div class="pricing-badge" data-i18n="pricing.plans.standard.badge">POPULAR</div>
                     <div class="pricing-header">
-                        <h3>Standard</h3>
-                        <p>Dự án phức tạp vừa</p>
+                        <h3 data-i18n="pricing.plans.standard.name">Standard</h3>
+                        <p data-i18n="pricing.plans.standard.desc">Medium complexity projects</p>
                     </div>
                     <div class="pricing-price">
-                        <span class="currency">₫</span>
-                        <span class="amount">4M</span>
-                        <span class="period">- 10M</span>
+                        <span class="currency" data-i18n="pricing.currency">$</span>
+                        <span class="amount" data-i18n="pricing.plans.standard.amount">160</span>
+                        <span class="period" data-i18n="pricing.plans.standard.range">- $400</span>
                     </div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Workflow phức tạp</li>
-                        <li><i class="fas fa-check"></i> Tích hợp AI (GPT, Gemini)</li>
-                        <li><i class="fas fa-check"></i> Database integration</li>
-                        <li><i class="fas fa-check"></i> Bảo hành 14 ngày</li>
-                        <li><i class="fas fa-check"></i> Hỗ trợ ưu tiên</li>
-                        <li><i class="fas fa-check"></i> Demo & training</li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.standard.features.0">Complex
+                                workflow</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.standard.features.1">AI
+                                integration (GPT, Gemini)</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.standard.features.2">Database
+                                integration</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.standard.features.3">14-day
+                                warranty</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.standard.features.4">Priority
+                                support</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.standard.features.5">Demo &
+                                training</span></li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary btn-block">Tư Vấn Ngay</a>
+                    <a href="#contact" class="btn btn-primary btn-block" data-i18n="pricing.plans.standard.cta">Consult
+                        Now</a>
                 </div>
 
                 <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="pricing-header">
-                        <h3>Enterprise</h3>
-                        <p>Dự án quy mô lớn</p>
+                        <h3 data-i18n="pricing.plans.enterprise.name">Enterprise</h3>
+                        <p data-i18n="pricing.plans.enterprise.desc">Large-scale projects</p>
                     </div>
                     <div class="pricing-price">
-                        <span class="amount" style="font-size: 1.8rem;">Liên Hệ</span>
+                        <span class="amount" style="font-size: 1.8rem;"
+                            data-i18n="pricing.plans.enterprise.price">Contact</span>
                     </div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Hệ thống toàn diện</li>
-                        <li><i class="fas fa-check"></i> Multi-platform</li>
-                        <li><i class="fas fa-check"></i> Dashboard & CRM</li>
-                        <li><i class="fas fa-check"></i> Self-hosted n8n</li>
-                        <li><i class="fas fa-check"></i> Bảo hành 30 ngày</li>
-                        <li><i class="fas fa-check"></i> Đào tạo & chuyển giao</li>
+                        <li><i class="fas fa-check"></i> <span
+                                data-i18n="pricing.plans.enterprise.features.0">Comprehensive system</span></li>
+                        <li><i class="fas fa-check"></i> <span
+                                data-i18n="pricing.plans.enterprise.features.1">Multi-platform</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.enterprise.features.2">Dashboard
+                                & CRM</span></li>
+                        <li><i class="fas fa-check"></i> <span
+                                data-i18n="pricing.plans.enterprise.features.3">Self-hosted n8n</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.enterprise.features.4">30-day
+                                warranty</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing.plans.enterprise.features.5">Training
+                                & handover</span></li>
                     </ul>
-                    <a href="https://calendly.com/techlaai" target="_blank" class="btn btn-outline btn-block">Đặt Lịch
-                        Tư Vấn</a>
+                    <a href="https://calendly.com/techlaai" target="_blank" class="btn btn-outline btn-block"
+                        data-i18n="pricing.plans.enterprise.cta">Schedule Consultation</a>
                 </div>
             </div>
 
             <div class="pricing-note" data-aos="fade-up">
-                <p><i class="fas fa-info-circle"></i> Giá trên chỉ mang tính tham khảo. Liên hệ để nhận báo giá chính
-                    xác cho dự án của bạn.</p>
+                <p><i class="fas fa-info-circle"></i> <span data-i18n="pricing.note">Prices are for reference only.
+                        Contact for accurate quote for your project.</span></p>
             </div>
         </div>
     </section>
@@ -757,77 +820,75 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">FAQ</span>
-                <h2 class="section-title">Câu Hỏi <span class="gradient-text">Thường Gặp</span></h2>
+                <h2 class="section-title"><span data-i18n="faq.title">Frequently</span> <span class="gradient-text"
+                        data-i18n="faq.titleHighlight">Asked Questions</span></h2>
             </div>
 
             <div class="faq-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Thời gian hoàn thành dự án là bao lâu?</span>
+                        <span data-i18n="faq.items.q1.question">How long does it take to complete a project?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Đa số dự án hoàn thành trong 5-7 ngày. Dự án phức tạp có thể mất 20-30 ngày. Chúng tôi luôn
-                            thông báo
-                            timeline cụ thể trước khi bắt đầu.</p>
+                        <p data-i18n="faq.items.q1.answer">Most projects are completed in 5-7 days. Complex projects may
+                            take 20-30 days. We always provide specific timeline before starting.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Có cần tôi cung cấp gì không?</span>
+                        <span data-i18n="faq.items.q2.question">Do I need to provide anything?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Tùy dự án, bạn cần cung cấp: Tài khoản n8n (hoặc chúng tôi setup), API keys, tài khoản các
-                            nền tảng
-                            cần tích hợp, và mô tả yêu cầu chi tiết.</p>
+                        <p data-i18n="faq.items.q2.answer">Depending on the project, you need to provide: n8n account
+                            (or we set up), API keys, accounts for platforms to integrate, and detailed requirements.
+                        </p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Thanh toán như thế nào?</span>
+                        <span data-i18n="faq.items.q3.question">How is payment made?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>40% khi bắt đầu, 60% khi hoàn thành và bạn hài lòng với kết quả. Thanh toán qua chuyển khoản
-                            ngân hàng hoặc ví điện tử.</p>
+                        <p data-i18n="faq.items.q3.answer">40% on start, 60% on completion when you're satisfied.
+                            Payment via bank transfer or e-wallet.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Có bảo hành sau bàn giao không?</span>
+                        <span data-i18n="faq.items.q4.question">Is there warranty after delivery?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Có! Tất cả dự án đều được bảo hành 14 ngày miễn phí. Fix bug, điều chỉnh nhỏ không phát sinh
-                            chi phí. Dự án Enterprise bảo hành 30 ngày.</p>
+                        <p data-i18n="faq.items.q4.answer">Yes! All projects have free 14-day warranty. Bug fixes and
+                            minor adjustments at no cost. Enterprise projects have 30-day warranty.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Nếu không hài lòng thì sao?</span>
+                        <span data-i18n="faq.items.q5.question">What if I'm not satisfied?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Chúng tôi luôn demo liên tục trong quá trình làm. Nếu kết quả cuối không đúng yêu cầu ban
-                            đầu, bạn
-                            có thể yêu cầu sửa đổi miễn phí hoặc hoàn tiền.</p>
+                        <p data-i18n="faq.items.q5.answer">We provide continuous demos during development. If the final
+                            result doesn't meet initial requirements, you can request free modifications or refund.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Có hỗ trợ sau khi bàn giao không?</span>
+                        <span data-i18n="faq.items.q6.question">Is there support after delivery?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Tất nhiên! Chúng tôi luôn sẵn sàng hỗ trợ, tư vấn sau bàn giao. 85% khách hàng quay lại với
-                            dự án
-                            mới chứng minh điều đó.</p>
+                        <p data-i18n="faq.items.q6.answer">Of course! We're always ready to support and advise after
+                            delivery. 85% of clients returning with new projects proves that.</p>
                     </div>
                 </div>
             </div>
@@ -839,21 +900,26 @@
         <div class="container">
             <div class="booking-wrapper" data-aos="fade-up">
                 <div class="booking-content">
-                    <span class="section-tag">ĐẶT LỊCH TƯ VẤN</span>
-                    <h2 class="booking-title">Đặt Lịch Trao Đổi <span class="gradient-text">1:1 Miễn Phí</span></h2>
-                    <p class="booking-desc">
-                        Chọn thời gian phù hợp để trao đổi trực tiếp về dự án của bạn.
-                        Chúng tôi sẽ phân tích yêu cầu và đề xuất giải pháp tối ưu.
+                    <span class="section-tag" data-i18n="booking.tag">SCHEDULE CONSULTATION</span>
+                    <h2 class="booking-title" data-i18n="booking.title">Schedule a <span class="gradient-text"
+                            data-i18n="booking.titleHighlight">Free 1:1 Call</span></h2>
+                    <p class="booking-desc" data-i18n="booking.desc">
+                        Choose a suitable time to discuss your project directly.
+                        We'll analyze requirements and propose optimal solutions.
                     </p>
                     <ul class="booking-benefits">
-                        <li><i class="fas fa-check-circle"></i> Tư vấn miễn phí 30 phút</li>
-                        <li><i class="fas fa-check-circle"></i> Phân tích yêu cầu chi tiết</li>
-                        <li><i class="fas fa-check-circle"></i> Đề xuất giải pháp phù hợp</li>
-                        <li><i class="fas fa-check-circle"></i> Báo giá rõ ràng, không phát sinh</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="booking.benefits.0">Free 30-minute
+                                consultation</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="booking.benefits.1">Detailed
+                                requirements analysis</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="booking.benefits.2">Suitable solution
+                                proposal</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="booking.benefits.3">Clear pricing, no
+                                hidden fees</span></li>
                     </ul>
                     <a href="https://calendly.com/techlaai" target="_blank" class="btn btn-primary btn-xl booking-btn">
                         <i class="fas fa-calendar-check"></i>
-                        <span>Đặt Lịch Ngay</span>
+                        <span data-i18n="booking.cta">Schedule Now</span>
                     </a>
                 </div>
                 <div class="booking-visual">
@@ -865,20 +931,20 @@
                         <div class="booking-card-body">
                             <div class="booking-info-item">
                                 <i class="fas fa-clock"></i>
-                                <span>30 phút</span>
+                                <span data-i18n="booking.card.duration">30 minutes</span>
                             </div>
                             <div class="booking-info-item">
                                 <i class="fas fa-tag"></i>
-                                <span>Miễn phí</span>
+                                <span data-i18n="booking.card.price">Free</span>
                             </div>
                             <div class="booking-info-item">
                                 <i class="fas fa-calendar-alt"></i>
-                                <span>Linh hoạt thời gian</span>
+                                <span data-i18n="booking.card.flexible">Flexible scheduling</span>
                             </div>
                         </div>
                         <div class="booking-card-footer">
                             <div class="availability-dot"></div>
-                            <span>Đang nhận lịch mới</span>
+                            <span data-i18n="booking.card.available">Accepting new bookings</span>
                         </div>
                     </div>
                 </div>
@@ -895,29 +961,29 @@
 
         <div class="container">
             <div class="cta-content" data-aos="fade-up">
-                <span class="cta-tag">SẴN SÀNG BẮT ĐẦU?</span>
+                <span class="cta-tag" data-i18n="cta.tag">READY TO START?</span>
                 <h2 class="cta-title">
-                    Hãy Để Chúng tôi Giúp Bạn<br>
-                    <span class="gradient-text">Tự Động Hóa Mọi Thứ</span>
+                    <span data-i18n="cta.title">Let Us Help You</span><br>
+                    <span class="gradient-text" data-i18n="cta.titleHighlight">Automate Everything</span>
                 </h2>
-                <p class="cta-desc">
-                    Đừng để các công việc thủ công chiếm hết thời gian của bạn.<br>
-                    127+ dự án đã hoàn thành. Bạn có thể là dự án tiếp theo.
+                <p class="cta-desc" data-i18n="cta.desc">
+                    Don't let manual work take all your time.<br>
+                    127+ projects completed. You could be the next.
                 </p>
 
                 <div class="cta-contact-info">
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-building"></i></div>
                         <div class="contact-detail">
-                            <span class="contact-label">Công ty</span>
-                            <span class="contact-value">CÔNG TY TNHH TECHLA AI</span>
+                            <span class="contact-label" data-i18n="cta.contact.company">Company</span>
+                            <span class="contact-value" data-i18n="cta.contact.companyName">TECHLA AI CO., LTD</span>
                         </div>
                     </div>
 
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-comment-dots"></i></div>
                         <div class="contact-detail">
-                            <span class="contact-label">Zalo / Hotline</span>
+                            <span class="contact-label" data-i18n="cta.contact.zalo">Zalo / Hotline</span>
                             <a href="https://zalo.me/0868287651" class="contact-value">0868.287.651</a>
                         </div>
                     </div>
@@ -925,7 +991,7 @@
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <div class="contact-detail">
-                            <span class="contact-label">Email</span>
+                            <span class="contact-label" data-i18n="cta.contact.email">Email</span>
                             <a href="mailto:admin@techlaai.com" class="contact-value">admin@techlaai.com</a>
                         </div>
                     </div>
@@ -934,26 +1000,26 @@
                 <div class="cta-buttons">
                     <a href="https://zalo.me/0868287651" class="btn btn-primary btn-xl">
                         <i class="fas fa-comment-dots"></i>
-                        <span>Chat Zalo Ngay</span>
+                        <span data-i18n="cta.buttons.zalo">Chat Zalo Now</span>
                     </a>
                     <a href="https://calendly.com/techlaai" target="_blank" class="btn btn-outline btn-xl">
                         <i class="fas fa-calendar-check"></i>
-                        <span>Đặt Lịch Tư Vấn</span>
+                        <span data-i18n="cta.buttons.booking">Schedule Consultation</span>
                     </a>
                 </div>
 
                 <div class="cta-trust">
                     <div class="trust-item">
                         <i class="fas fa-shield-alt"></i>
-                        <span>Bảo mật thông tin</span>
+                        <span data-i18n="cta.trust.security">Information security</span>
                     </div>
                     <div class="trust-item">
                         <i class="fas fa-clock"></i>
-                        <span>Phản hồi trong 30 phút</span>
+                        <span data-i18n="cta.trust.response">Response in 30 minutes</span>
                     </div>
                     <div class="trust-item">
                         <i class="fas fa-handshake"></i>
-                        <span>Tư vấn miễn phí</span>
+                        <span data-i18n="cta.trust.free">Free consultation</span>
                     </div>
                 </div>
             </div>
@@ -969,13 +1035,12 @@
                         <img src="logo.jfif" alt="TECHLA AI" class="logo-img">
                         <span class="logo-text">TECHLA<span class="highlight"> AI</span></span>
                     </a>
-                    <p>CÔNG TY TNHH TECHLA AI - Xây dựng các trợ lý AI thúc đẩy tăng trưởng doanh thu rõ rệt, giảm nhu
-                        cầu về nhân sự và tiết kiệm hàng nghìn giờ làm
-                        việc thủ công không cần thiết.</p>
+                    <p data-i18n="footer.brand">TECHLA AI CO., LTD - Building AI assistants that drive clear revenue
+                        growth, reduce staffing needs, and save thousands of unnecessary manual work hours.</p>
                 </div>
 
                 <div class="footer-links">
-                    <h4>Dịch Vụ</h4>
+                    <h4 data-i18n="footer.services">Services</h4>
                     <ul>
                         <li><a href="#services">Chatbot AI</a></li>
                         <li><a href="#services">Automation Workflow</a></li>
@@ -985,17 +1050,17 @@
                 </div>
 
                 <div class="footer-links">
-                    <h4>Liên Kết</h4>
+                    <h4 data-i18n="footer.links">Links</h4>
                     <ul>
-                        <li><a href="#about">Về Chúng tôi</a></li>
+                        <li><a href="#about" data-i18n="nav.about">About Us</a></li>
                         <li><a href="#cases">Case Studies</a></li>
-                        <li><a href="#pricing">Bảng Giá</a></li>
+                        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-contact">
-                    <h4>Liên Hệ</h4>
+                    <h4 data-i18n="footer.contact">Contact</h4>
                     <ul>
                         <li><i class="fas fa-phone"></i> <a href="tel:0868287651">0868.287.651</a></li>
                         <li><i class="fas fa-comment-dots"></i> <a href="https://zalo.me/0868287651">Zalo:
@@ -1007,7 +1072,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 CÔNG TY TNHH TECHLA AI. All rights reserved.</p>
+                <p data-i18n="footer.copyright">© 2025 TECHLA AI CO., LTD. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1024,18 +1089,22 @@
             </button>
         </div>
         <ul class="mobile-nav-links">
-            <li><a href="#about">Về Chúng tôi</a></li>
-            <li><a href="#proof">Thành Tích</a></li>
-            <li><a href="#services">Dịch Vụ</a></li>
+            <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+            <li><a href="#proof" data-i18n="nav.achievements">Achievements</a></li>
+            <li><a href="#services" data-i18n="nav.services">Services</a></li>
             <li><a href="#cases">Case Studies</a></li>
-            <li><a href="#pricing">Báo Giá</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact" class="btn btn-primary">Liên Hệ Ngay</a></li>
+            <li><a href="#contact" class="btn btn-primary" data-i18n="nav.contact">Contact Now</a></li>
         </ul>
+        <div class="mobile-lang-switcher">
+            <button class="lang-switcher"><span class="lang-flag">🇺🇸</span><span class="lang-code">EN</span></button>
+        </div>
     </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="lang.js"></script>
     <script src="script.js"></script>
 </body>
 

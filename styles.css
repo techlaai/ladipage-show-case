@@ -2281,3 +2281,81 @@ h6 {
         font-size: 0.85rem;
     }
 }
+
+/* ==========================================
+   LANGUAGE SWITCHER
+========================================== */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(0, 51, 85, 0.08);
+    border: 1px solid rgba(0, 51, 85, 0.15);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin-left: var(--spacing-md);
+}
+
+.lang-switcher:hover {
+    background: rgba(0, 170, 255, 0.15);
+    border-color: var(--accent);
+    transform: scale(1.02);
+}
+
+.lang-flag {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.lang-code {
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* Smooth text transition for language switching */
+[data-i18n] {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lang-switching [data-i18n] {
+    opacity: 0;
+    transform: translateY(-5px);
+}
+
+/* Mobile language switcher */
+.mobile-lang-switcher {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-lg) 0;
+    border-top: 1px solid var(--gray-200);
+    margin-top: var(--spacing-lg);
+}
+
+.mobile-lang-switcher .lang-switcher {
+    margin-left: 0;
+    padding: 12px 24px;
+    font-size: 1rem;
+}
+
+/* Navbar scrolled state - adjust switcher */
+.navbar.scrolled .lang-switcher {
+    background: rgba(0, 51, 85, 0.06);
+    border-color: rgba(0, 51, 85, 0.12);
+}
+
+.navbar.scrolled .lang-switcher:hover {
+    background: rgba(0, 170, 255, 0.12);
+    border-color: var(--accent);
+}
+
+/* Hide desktop switcher on mobile */
+@media (max-width: 900px) {
+    .nav-links .lang-switcher {
+        display: none;
+    }
+}
